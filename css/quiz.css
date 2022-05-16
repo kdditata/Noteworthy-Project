@@ -1,0 +1,175 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/* to dim the background image */
+.normalBodyImage {
+    background-image: url('../images/lightsInArena.jpeg');
+}
+.dimmedBodyImage {
+    background-image: linear-gradient(rgba(89, 100, 100, 0.6), rgba(89, 100, 100, 0.6)), url('../images/lightsInArena.jpeg');
+}
+/* navbar */
+#nav {
+    margin-bottom: 4rem;
+    opacity: 0.9;
+}
+/* hover and active on nav links */
+.navLink:hover, .navLink:active {
+    padding: 0.3rem;
+    font-weight: bold;
+    border-bottom: solid 0.1rem goldenrod;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    font-family: Noteworthy, LingWai SC, Signpainter, Nanum Brush Script, cursive;
+}
+/* hamburger button */
+#hamburgerButton {
+    color: rgba(218, 165, 32, 0.8);
+ }
+/* container for the quiz */
+#quizBox {
+    background-color: rgb(235, 58, 68);
+    height: 100%;
+    width: 60%;
+    padding: 2rem; 
+}
+/* user options */
+.choices {
+    display: block;
+    background-color: rgba(236, 109, 115, 0.7);
+    width: 53%;
+    border-radius: 0.5rem;
+    border-width: 0;
+    margin: 1rem auto 0 auto;
+}
+.choices:hover {
+    border: 0.0625rem solid goldenrod;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem black;
+    font-family: Noteworthy, LingWai SC, Signpainter, Nanum Brush Script, cursive;
+}
+/* button styling */
+.buttons {
+    background-color: black;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+.buttons:hover {
+    background-color: rgba(133, 18, 18, 0.9);
+}
+/* start or take quiz button */
+#takeQuizButton {
+    background-color: black;
+    margin: auto;
+    width: 12rem;
+    display: block;
+}
+#takeQuizButton:hover {
+    background-color: goldenrod;
+}
+/* start over button */
+.startOverBtn {
+    width: 11rem;
+    height: 2.75rem;
+}
+/* div that holds correct/incorrect messages and score as well as instructions */
+.divToAppear {
+    background-color: black;
+    width: 21.875rem;
+    height: auto;
+    margin: auto;
+}
+/* correct or incorrect alert */
+#message {
+    color: goldenrod;
+    font-size: 2.2rem;
+}
+/* images for correct or incorrect message */
+.correctAnswerPicture {
+    height: 24rem;
+    border: 0.15rem solid black;
+}
+#pictures {
+    width: 23rem;
+}
+/* welcome and final score messages */
+.messages {
+    font-size: 1.85rem;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-fill-color: white;
+    text-shadow: 0.1875rem 0.1875rem 0.1875rem black;
+}
+/* footer */
+.socialMedia {
+    height: 1.7rem;
+}
+.store {
+    height: 2rem;
+}
+.heading {
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+}
+#footer {
+    font-family: optima;
+}
+.footer-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+#next {
+    margin-bottom: 300px;
+    background-color: black;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+/* media queries */
+@media (max-width: 768px) {
+   #nav {
+       margin-bottom: 1rem;
+   }
+   #takeQuizButton {
+       margin-bottom: 1rem;
+   }
+   #instructions {
+       margin-bottom: 1rem;
+   }
+   #nextButton {
+       margin-top: -1rem;
+       margin-bottom: 1rem
+   }
+   #quizBox {
+       margin-top: -1rem;
+   }
+} 
+@media (max-width: 568px) {
+   .messages {
+        font-size: 1.3rem;
+    }
+    #quizBox {
+        padding: 0.25rem;
+        margin-bottom: 10rem;
+    }
+    #options {
+        padding: 0;
+    }
+    #next {
+        margin-bottom: 10rem;
+    }
+    #startOverButton {
+        margin-bottom: 15rem;
+    }
+    #messageForFinalScore {
+        margin: 0.125rem;
+    }
+ }
+ 

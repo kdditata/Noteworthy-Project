@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Noteworthy Quiz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdn.tlm.cloud/fontawesome/5.15.2/css/all.css"
+            integrity="sha384-+2e4h68pmq1jygCMJInB7m4qQ8/KId/WkeL2Qcg3YjJqYqjtUV1hk6CZm3SM+I2V" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel='stylesheet' href="../css/quiz.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap-reboot.min.css" integrity="sha512-YmRhY1UctqTkuyEizDjgJcnn0Knu5tdpv09KUI003L5tjfn2YGxhujqXEFE7fqFgRlqU/jeTI+K7fFurBnRAhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <!-- JQUERY -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <!-- BOOTSTRAP -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap-grid.min.css" integrity="sha512-QTQigm89ZvHzwoJ/NgJPghQPegLIwnXuOXWEdAjjOvpE9uaBGeI05+auj0RjYVr86gtMaBJRKi8hWZVsrVe/Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <!-- JAVASCRIPT -->
+          <script src="../js/quiz.js"></script>
+    </head>
+    <body class="normalBodyImage">
+        <!-- container fluid -->
+        <div id='container' class="container-fluid text-white text-center">
+            <!--navbar-->
+            <nav id='nav' class="navbar navbar-expand-md">
+                <span class='text-white pl-2'>Noteworthy</span>
+                <!-- hamburger button on collapse of navbar -->
+                <button id='hamburgerButton' class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-2x fa-music"></i>
+                </button>
+                <div class="collapse navbar-collapse navbar-nav pl-2 justify-content-end align-items-start" id="navbarToggler">
+                    <a class="text-decoration-none nav-item text-white nav-link navLink" href="../index.html">Home </a>
+                    <a class="text-decoration-none text-white nav-item nav-link navLink" href="../html/signUp.html">Sign Up</a>
+                </div>
+                <!-- hamburger button close -->
+            </nav>
+            <!--navbar close-->
+            <!-- quiz container -->
+            <div class="row justify-content-center mt-4 text-white">
+                <div id='quizBox' class='pb-5 col-md-6'>
+                    <div id='questions' class='pt-5'>
+                    </div>
+                    <div id='options' class='pb-5 mt-5 '>
+                    </div>
+                </div>
+            </div>
+            <!-- welcome message -->
+            <div id='welcomeMessage' class='messages m-2 p-2'></div>
+            <!-- start quiz button -->
+            <button id="takeQuizButton" class='mb-5 btn text-white buttons btn-lg'>Take the Quiz!</button>
+            <!-- final message based on score -->
+            <div id='messageForFinalScore' class='messages'></div>
+            <!-- correct/incorrect message -->
+            <div class="row justify-content-center">
+                <div id='message' class='divToAppear px-1'></div>
+            </div>
+            <!-- incorrect/correct pictures -->
+            <div class="row justify-content-center">
+                <div id='pictures'>
+                    <img class='img-fluid divToAppear correctAnswerPicture' src='../images/bobMarley.jpg' alt='Bob Marley'>
+                    <img class='img-fluid py-5 divToAppear incorrectAnswerPicture'
+                        src='../images/jollyRoger.png' alt='jolly roger flag'>
+                </div>
+            </div>
+            <!-- instructions div -->
+            <div class="row justify-content-center">
+                <div id='instructions' class='divToAppear'>
+                </div>
+            </div>
+            <!-- start over button -->
+            <div id='startOverButton' class='mt-4 text-white'>
+            </div>
+            <!-- next button -->
+            <div id='nextButton'>
+                <button id='next' class='px-2 buttons mt-2 text-white'>Next</button>
+            </div>
+            <!-- footer -->
+            <footer id='footer' class='footer-bottom'>
+                <div class='text-white row bg-dark justify-content-center pt-2'>
+                    <div class='col-12 col-sm-4 mb-1 text-center'>
+                        <p class='heading text-uppercase'>Location</p>
+                        <p class='heading'>29501 Kickapoo Rd.<br> McLoud, OK 74851</p>
+                    </div>
+                    <div class="col-12 col-sm-4 mb-1 text-center">
+                        <p class='heading text-uppercase'>Web Links</p>
+                        <img class='socialMedia' src="../images/fb.png" alt="facebook">
+                        <img class='socialMedia' src="../images/insta.png" alt="instagram">
+                        <img class='socialMedia' src="../images/tweet.png" alt="twitter">
+                        <img class='socialMedia' src="../images/gplus.png" alt="googlePlus">
+                    </div>
+                    <div class="col-12 col-sm-4 mb-1 text-center">
+                        <p class='heading text-uppercase'>Download the App</p>
+                        <img class="store" src="../images/footer_app_store.png" alt="play store">
+                        <img class="store" src="../images/footer_google_play.png" alt="google play">
+                    </div>
+                </div>
+            </footer>
+            <!-- footer close -->
+        </div>
+        <!-- container fluid close-->
+    </body>
+
+</html>

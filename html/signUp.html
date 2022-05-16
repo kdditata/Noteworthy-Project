@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- CSS -->
+    <link rel='stylesheet' href='../css/signUp.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap-reboot.min.css" integrity="sha512-YmRhY1UctqTkuyEizDjgJcnn0Knu5tdpv09KUI003L5tjfn2YGxhujqXEFE7fqFgRlqU/jeTI+K7fFurBnRAhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap-grid.min.css" integrity="sha512-QTQigm89ZvHzwoJ/NgJPghQPegLIwnXuOXWEdAjjOvpE9uaBGeI05+auj0RjYVr86gtMaBJRKi8hWZVsrVe/Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JQUERY -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- BOOTSTRAP -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+     <!-- JAVASCRIPT -->
+     <script src="../js/signUp.js"></script>
+</head>
+
+<body id="bodySection">
+    <!-- container fluid -->
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav id='nav' class="navbar navbar-dark navbar-expand-md">
+            <span class='text-white pl-2'>Noteworthy</span>
+            <!-- hamburger button when collapsed on nav -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-nav pl-2 justify-content-end align-items-start"
+                id="navbarToggler">
+                <a class="text-decoration-none nav-item text-white nav-link" href="../index.html">Home</a>
+                <a class="text-decoration-none text-white nav-item nav-link" href="../html/quiz.html">Take Quiz</a>
+            </div>
+            <!-- hamburger button on nav close -->
+        </nav>
+        <!--navbar close-->
+        <!--div to hide-->
+        <div id='elementsToBeHidden'>
+            <h4 class='text-center m-4'>Sign up for Noteworthy News</h4>
+            <div id='pic' class='text-center'>
+                <img id='guyInCrowd' class='ml-5 img-fluid' alt='concert crowd' src='../images/concertCrowd.jpeg'>
+                <img id='girlWithRecord' class='img-fluid mb-4' alt='girl with record'
+                    src='../images/girlWithRecord.jpeg'>
+                <img id='starWithCrowd' class='img-fluid' alt='star with crowd' src='../images/starWithCrowd.jpeg'>
+            </div>
+            <!-- form -->
+            <div id='form' class='row d-flex h-100 align-items-center justify-content-center'>
+                <form id='signUpForm' class='mb-4'>
+                    <div class='form-group'>
+                        <label for='nameInput' class='inputField text-white'>Name</label>
+                        <input type='text' id='name' class='form-control' placeholder='Enter your name...' required />
+                    </div>
+                    <div class='form-group'>
+                        <label for='emailInput' class='inputField text-white'>Email</label>
+                        <input type='email' id='email' class='form-control' placeholder='Enter your email address...'
+                            required />
+                    </div>
+                    <div class='form-group row justify-content-center'>
+                        <input type='submit' id='submitButton' value='Submit' class='buttons text-white' />
+                    </div>
+                </form>
+            </div>
+            <!-- form close-->
+        </div>
+        <!--div to hide close-->
+        <!-- thank you message div -->
+        <div id='thankYouMessageDiv' class='row justify-content-center text-center text-white p-4'>
+            <input type='submit' id='clickHere' value='Click Here' class='buttons mt-3 text-white' />
+        </div>
+        <!-- thank you message div close -->
+        <!-- footer -->
+        <footer id='footer' class='footer-bottom mb-0'>
+            <div class='text-white row bg-dark justify-content-center pt-2'>
+                <div class='col-sm-4 mb-1 text-center'>
+                    <p class='heading text-uppercase'>Location</p>
+                    <p class='heading'>29501 Kickapoo Rd.<br> McLoud, OK 74851</p>
+                </div>
+                <div class="col-sm-4 mb-1 text-center">
+                    <p class='heading text-uppercase'>Web Links</p>
+                    <img class='socialMedia' src="../images/fb.png" alt="facebook">
+                    <img class='socialMedia' src="../images/insta.png" alt="instagram">
+                    <img class='socialMedia' src="../images/tweet.png" alt="twitter">
+                    <img class='socialMedia' src="../images/gplus.png" alt="googlePlus">
+                </div>
+                <div class="col-sm-4 mb-1 text-center">
+                    <p class='heading text-uppercase'>Download the App</p>
+                    <img class="store" src="../images/footer_app_store.png" alt="play store">
+                    <img class="store" src="../images/footer_google_play.png" alt="google play">
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+    <!-- container fluid close-->
+</body>
+
+</html>

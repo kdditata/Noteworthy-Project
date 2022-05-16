@@ -1,0 +1,99 @@
+body {
+    background-image: url(../images/darkConcert.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/* navbar */
+#nav {
+    margin-bottom: 6rem;
+    opacity: 0.9;
+}
+/* hover and click on nav links */
+a:hover, a:active {
+    padding: 0.3rem;
+    border-bottom: solid 0.1rem rgb(122, 14, 19);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius:0.25rem;
+    font-family: Noteworthy, LingWai SC, Nanum Brush Script, cursive;
+    font-weight: bold;
+}
+/* music notes */
+.musicNote {
+    background-image: url(../images/noteWorthyLogo-white.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    opacity: 0.75;
+}
+h6 {
+    position: relative;
+    z-index: 2;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-fill-color: white;
+    text-shadow: 0.1875rem 0.1875rem 0.1875rem black;
+}
+/* information boxes on landing page */
+.boxes {
+    width: 18rem;
+    height: 18rem;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem;
+    margin-top: 3rem;
+}
+#quizBox {
+    background-color:rgba(235, 58, 68, 0.7);  
+}
+#signUpBox {
+    background-color:rgba(24, 33, 119, 0.7);
+}
+/* hover class for buttons in boxes */
+.hover {
+    width: 13rem;
+    height: 6rem;
+    border: 0.1rem solid goldenrod;
+}
+.buttonImages {
+   border-radius: 0.625rem;
+}
+/* footer */
+.socialMedia {
+    height: 1.7rem;
+}
+.store {
+    height: 2rem;
+}
+.heading {
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+}
+#footer {
+    font-family: optima;
+}
+/* media queries */
+@media (max-width: 768px) {
+    #nav {
+        margin-bottom: 0.25rem;
+    }
+    #quizBox {
+        margin: 0.5rem; 
+    }
+    #signUpBox {
+        margin: 0.5rem;  
+    }
+}
+@media (min-width: 640px) {
+    .footer-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    }
+}
+
+

@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noteworthy</title>
+        <!-- Bootstrap -->
+      
+  
+        <!-- CSS -->
+        <link rel='stylesheet' href='./css/style.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap-reboot.min.css" integrity="sha512-YmRhY1UctqTkuyEizDjgJcnn0Knu5tdpv09KUI003L5tjfn2YGxhujqXEFE7fqFgRlqU/jeTI+K7fFurBnRAhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap-grid.min.css" integrity="sha512-QTQigm89ZvHzwoJ/NgJPghQPegLIwnXuOXWEdAjjOvpE9uaBGeI05+auj0RjYVr86gtMaBJRKi8hWZVsrVe/Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+        <!-- JQUERY -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <!-- BOOTSTRAP -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          
+          <!-- JAVASCRIPT -->
+          <script src="./js/index.js"></script>
+       
+    </head>
+    <body>
+        <!-- container fluid -->
+        <div id='container' class="container-fluid">
+            <!--navbar-->
+            <nav id='nav' class="navbar navbar-dark navbar-expand-md">
+                <span class='text-white pl-2'>Noteworthy</span>
+                <!-- hamburger button when navbar collapses -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-nav pl-2 justify-content-end align-items-start"
+                    id="navbarToggler">
+                    <a class="text-decoration-none text-white nav-item nav-link" href="./html/quiz.html">Take Quiz</a>
+                    <a class="text-decoration-none nav-item text-white nav-link" href="./html/signUp.html">Sign Up </a>
+                </div>
+                <!-- hamburger button close -->
+            </nav>
+            <!--navbar close-->
+            <!-- intro -->
+            <div id='content'>
+                <div class='row justify-content-center'>
+                    <h6 class='text-center text-white p-2'>Welcome to Noteworthy! We celebrate extraordinary acts in music with our entertaining quiz and informational newsletter. 
+                    </h6>
+                </div>
+                <!-- intro close -->
+                <!-- information boxes -->
+                <div class='row justify-content-center text-center'>
+                    <div id='quizBox' class='d-flex mx-5 align-items-center boxes text-center text-white'>
+                        <p>Hello music lovers! Test your knowledge of music trivia and pop culture with the Noteworthy
+                            quiz.</br><a href='./html/quiz.html'><img class='img-fluid mt-3 buttonImages'
+                                    id='takeQuizButton' src='./images/takeQuizButton.png' alt='take quiz'></img></a></p>
+                    </div>
+                    <div id='signUpBox' class='d-flex mx-5 align-items-center boxes text-center text-white'>
+                        <p>Want to obtain Superfan status? Are you interested in exciting artist news? Sign up for
+                            Noteworthy News.</br><a href='./html/signUp.html'><img class='img-fluid mt-3 buttonImages'
+                                    id='signUpNowButton' src='./images/signUpButton.png' alt='sign up'></img></a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- information boxes close -->
+            <!-- footer -->
+            <footer id='footer' class='footer-bottom'>
+                <div class='text-white row bg-dark justify-content-center pt-2'>
+                    <div class='col-md-4 mb-1 text-center'>
+                        <p class='heading text-uppercase'>Location</p>
+                        <p class='heading'>29501 Kickapoo Rd.<br> McLoud, OK 74851</p>
+                    </div>
+                    <div class="col-md-4 mb-1 text-center">
+                        <p class='heading text-uppercase'>Web Links</p>
+                        <img class='socialMedia' src="./images/fb.png" alt="facebook">
+                        <img class='socialMedia' src="./images/insta.png" alt="instagram">
+                        <img class='socialMedia' src="./images/tweet.png" alt="twitter">
+                        <img class='socialMedia' src="./images/gplus.png" alt="googlePlus">
+                    </div>
+                    <div class="col-md-4 mb-1 text-center">
+                        <p class='heading text-uppercase'>Download the App</p>
+                        <img class="store" src="./images/footer_app_store.png" alt="play store">
+                        <img class="store" src="./images/footer_google_play.png" alt="google play">
+                    </div>
+                </div>
+            </footer>
+            <!-- footer close -->
+        </div>
+        <!-- container fluid close-->
+        
+    </body>
+</html>
