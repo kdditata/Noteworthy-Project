@@ -1,4 +1,4 @@
-# Noteworthy-Project
+# [Noteworthy-project](https://carrie-murchison.github.io/Noteworthy-Project/) (deployed on GH pages)
 
 ## Site for music lovers! Take an interesting music trivia quiz or sign up for noteworthy news.
 
